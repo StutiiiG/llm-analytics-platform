@@ -65,7 +65,7 @@ Includes sample sales data with:
 
 ##  Deployment
 
-Deployed on Streamlit Cloud. [Try it live](YOUR_URL_HERE)
+Deployed on Streamlit Cloud. [Try it live](https://analytics-llm.streamlit.app/?embed_options=dark_theme)
 
 ##  License
 
