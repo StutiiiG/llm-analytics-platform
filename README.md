@@ -86,13 +86,12 @@ The system answers using the **actual dataset schema and values**.
 
 ### Main Analysis View
 ![Analysis View](assets/analysis_chat.png)
-_Add screenshot of the main analysis interface_
 
 ### Data Upload & Sidebar
-_Add screenshot of the data upload and quick queries section_
+![Data Upload](assets/data_upload_sidebar.png)
 
 ### Charts View
-_Add screenshot of the visualization tab_
+![Charts View](assets/charts_view.png)
 
 ---
 
