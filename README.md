@@ -4,6 +4,27 @@ A lightweight data analysis tool designed for managers, product leaders, and non
 
 [![Streamlit App](https://img.shields.io/badge/Live_App-Streamlit-brightgreen?logo=streamlit)](YOUR_DEPLOYED_URL_HERE)
 
+## The Problem
+
+Organizations often have data, but accessing insights is slow and fragmented.
+
+Common challenges:
+- Business teams cannot query raw data themselves
+- Even simple questions require:
+  - SQL knowledge
+  - Pre-built dashboards
+  - Back-and-forth with data teams
+- Exploration is limited to predefined views
+- Analysts spend time answering repetitive questions instead of higher-value work
+
+Traditional BI tools are powerful, but they:
+- Assume technical expertise
+- Require upfront modeling
+- Do not support open-ended, ad-hoc exploration
+
+---
+
+
 ##  Features
 
 - **Natural Language Queries**: Ask questions in plain English
