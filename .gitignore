@@ -14,7 +14,3 @@ venv/
 # streamlit
 .streamlit/
 
-# data (optional if you don't want big files committed)
-*.csv
-*.xlsx
-*.xls
