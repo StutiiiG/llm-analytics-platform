@@ -2,7 +2,7 @@
 
 A lightweight data analysis tool designed for managers, product leaders, and non-technical decision-makers to explore datasets and get insights using plain English—without writing code or waiting on analysts.
 
-[![Streamlit App](https://img.shields.io/badge/Live_App-Streamlit-brightgreen?logo=streamlit)](YOUR_DEPLOYED_URL_HERE)
+--- 
 
 ## The Problem
 
@@ -22,8 +22,35 @@ Traditional BI tools are powerful, but they:
 - Require upfront modeling
 - Do not support open-ended, ad-hoc exploration
 
+--- 
+
+## The Solution
+
+**LLM Analytics Platform** enables leaders to:
+
+- Upload a CSV or Excel file
+- Ask questions in natural language
+- Instantly receive:
+  - Clear analytical answers
+  - Summary statistics
+  - Context-aware explanations
+  - Visual insights where appropriate
+
+No dashboards to pre-build.  
+No queries to write.  
+No technical setup required.
+
 ---
 
+## Who This Is For
+
+- Product managers
+- Business and operations leaders
+- Strategy and growth teams
+- Consultants
+- Anyone who needs answers from data without technical tooling
+
+---
 
 ##  Features
 
