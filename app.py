@@ -8,9 +8,10 @@ import plotly.graph_objects as go
 import requests
 from dotenv import load_dotenv
 
-OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
-
 load_dotenv()
+
+# Pull key from Streamlit secrets first, fallback to env
+OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
 
 # ---------------------------
 # Page config
@@ -99,7 +100,7 @@ def call_openai_chat_completion(query: str, df: pd.DataFrame, temperature: float
     Calls OpenAI Chat Completions using raw HTTP (requests),
     avoiding the 'proxies' / httpx client mismatch you hit.
     """
-    api_key = os.getenv("OPENAI_API_KEY", "")
+    api_key = OPENAI_API_KEY or ""
     if not api_key:
         return "Missing OPENAI_API_KEY. Add it to your .env file (OPENAI_API_KEY=...)."
 
