@@ -95,46 +95,79 @@ _Add screenshot of the visualization tab_
 
 ---
 
-##  Installation
+## Architecture Overview
+
+_Add a simple diagram illustrating the flow below_
+
+1. User uploads CSV / Excel file  
+2. Data is loaded locally into Pandas  
+3. A compact dataset summary is generated:
+   - Schema
+   - Sample rows
+   - Summary statistics  
+4. User question + dataset context is sent to the OpenAI API  
+5. The model returns a structured analytical response  
+6. Charts are generated locally using Plotly  
+
+**Important:**  
+Only summarized text context is sent to the model. Raw data remains local.
+
+## Tech Stack
+
+- Frontend: Streamlit  
+- Data Processing: Pandas  
+- Visualization: Plotly  
+- LLM: OpenAI API (direct HTTP calls)  
+
+### Why No LangChain
+
+LangChain does not add value for this use case:
+- No multi-agent orchestration required
+- No retrieval pipelines
+- No complex chains
+- Adds unnecessary dependency risk and deployment friction
+
+Direct API calls are:
+- Faster
+- More stable
+- Easier to audit
+- Easier to maintain
+
+This is an intentional design decision.
+
+---
+
+## Privacy & Data Handling
+
+- All data processing happens locally within the app session
+- Only text summaries are sent to the LLM
+- No raw data is uploaded externally
+- No data is stored or logged
+
+Suitable for internal exploratory analysis.
+
+---
+
+## Installation (Local)
+
 ```bash
-# Clone repo
-git clone https://github.com/YOUR_USERNAME/llm-analytics-assistant
-cd llm-analytics-assistant
+# Clone repository
+git clone https://github.com/YOUR_USERNAME/llm-analytics-platform
+cd llm-analytics-platform
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Set up environment
-echo "OPENAI_API_KEY=your-key-here" > .env
+# Create .env file
+OPENAI_API_KEY="your_openai_key_here"
 
-# Run app
+# Run the app
 streamlit run app.py
 ```
 
-##  How It Works
+## Deployment 
 
-1. Upload your CSV file or try sample data
-2. Ask questions in natural language
-3. LLM agent analyzes your data using pandas
-4. Get instant answers with automatic visualizations
+- Deployed on streamlit cloud
+- Python 3.13 compatbile 
 
-##  Sample Data
-
-Includes sample sales data with:
-- 730 days of sales records
-- Multiple categories and regions
-- Sales and units sold metrics
-
-##  Privacy
-
-- All data processing happens locally
-- Only queries are sent to OpenAI API
-- No data is stored or shared
-
-##  Deployment
-
-Deployed on Streamlit Cloud. [Try it live](https://analytics-llm.streamlit.app/?embed_options=dark_theme)
-
-##  License
-
-MIT License
+Live app: https://analytics-llm.streamlit.app 
