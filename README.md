@@ -2,7 +2,6 @@
 
 A lightweight data analysis tool designed for managers, product leaders, and non-technical decision-makers to explore datasets and get insights using plain English—without writing code or waiting on analysts.
 
---- 
 
 ## The Problem
 
@@ -52,28 +51,49 @@ No technical setup required.
 
 ---
 
-##  Features
+## Key Capabilities
 
-- **Natural Language Queries**: Ask questions in plain English
-- **Automatic Analysis**: Get instant calculations, aggregations, and insights
-- **Smart Visualizations**: Auto-generated charts based on your questions
-- **No Code Required**: Perfect for non-technical users
+### Natural Language Data Analysis
+Ask questions such as:
+- “What are the main drivers of performance?”
+- “Which category contributes the most?”
+- “Are there trends over time?”
+- “Where are the largest variations?”
 
-##  Example Questions
+The system answers using the **actual dataset schema and values**.
 
-- "What are the total sales?"
-- "Show me average sales by category"
-- "Which region performs best?"
-- "Plot sales trend over time"
-- "What's the correlation between sales and units sold?"
+---
 
-##  Tech Stack
+### Safe, Grounded Insights
+- The model is provided with:
+  - Column names and data types
+  - Null counts
+  - Sample rows
+  - Summary statistics
+- The system does **not hallucinate columns**
+- Answers are explained in clear, business-oriented language
 
-- **Frontend**: Streamlit
-- **LLM**: OpenAI GPT-3.5
-- **Agent Framework**: LangChain
-- **Data**: Pandas
-- **Visualization**: Plotly
+---
+
+### Visual Explanations
+- Automatic charts when relevant:
+  - Numeric distributions
+  - Category breakdowns
+  - Time-based trends
+- Visuals are generated only when supported by the data
+
+## Screenshots
+
+### Main Analysis View
+_Add screenshot of the main analysis interface_
+
+### Data Upload & Sidebar
+_Add screenshot of the data upload and quick queries section_
+
+### Charts View
+_Add screenshot of the visualization tab_
+
+---
 
 ##  Installation
 ```bash
