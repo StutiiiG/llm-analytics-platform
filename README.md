@@ -152,7 +152,7 @@ Suitable for internal exploratory analysis.
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/llm-analytics-platform
+git clone https://github.com/StutiiiG/llm-analytics-platform
 cd llm-analytics-platform
 
 # Install dependencies
