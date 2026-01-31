@@ -94,7 +94,7 @@ The system answers using the **actual dataset schema and values**.
 ![Data Upload](assets/data_upload_sidebar.png)
 
 ### Charts View
-![Charts View](assets/charts_view.png)
+![Charts View](assets/charts_preview.png)
 
 ---
 
