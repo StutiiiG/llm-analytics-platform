@@ -97,17 +97,7 @@ _Add screenshot of the visualization tab_
 
 ## Architecture Overview
 
-_Add a simple diagram illustrating the flow below_
 
-1. User uploads CSV / Excel file  
-2. Data is loaded locally into Pandas  
-3. A compact dataset summary is generated:
-   - Schema
-   - Sample rows
-   - Summary statistics  
-4. User question + dataset context is sent to the OpenAI API  
-5. The model returns a structured analytical response  
-6. Charts are generated locally using Plotly  
 
 **Important:**  
 Only summarized text context is sent to the model. Raw data remains local.
