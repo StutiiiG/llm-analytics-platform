@@ -1,6 +1,6 @@
 # LLM Analytics Assistant
 
-An intelligent data analysis tool powered by GPT-3.5 that lets you explore datasets using natural language.
+A lightweight data analysis tool designed for managers, product leaders, and non-technical decision-makers to explore datasets and get insights using plain English—without writing code or waiting on analysts.
 
 [![Streamlit App](https://img.shields.io/badge/Live_App-Streamlit-brightgreen?logo=streamlit)](YOUR_DEPLOYED_URL_HERE)
 
