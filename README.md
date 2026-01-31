@@ -85,6 +85,7 @@ The system answers using the **actual dataset schema and values**.
 ## Screenshots
 
 ### Main Analysis View
+![Analysis View](assets/analysis_chat.png)
 _Add screenshot of the main analysis interface_
 
 ### Data Upload & Sidebar
