@@ -8,6 +8,8 @@ import plotly.graph_objects as go
 import requests
 from dotenv import load_dotenv
 
+OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+
 load_dotenv()
 
 # ---------------------------
