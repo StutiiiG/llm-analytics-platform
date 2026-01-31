@@ -97,7 +97,7 @@ _Add screenshot of the visualization tab_
 
 ## Architecture Overview
 
-![Architecture Diagram](assets/architecture.png)
+![Architecture Diagram](assets/Architecture.png)
 
 **Important:**  
 Only summarized text context is sent to the model. Raw data remains local.
